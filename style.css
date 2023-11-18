@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+  }
+
+body{   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #C6AEE3;    
+  }
+
+
+.navbar {
+    background-color: rgb(203 203 203 / 50%); 
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease; /* Efeito de transição na cor de fundo */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    margin-right: 10px;
+}
+.logo-title {
+color: #fffcfc;
+font-weight: 100;
+}
+.nav-list a {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fffcfc;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-list a:hover {
+    color: #ddd;
+}
+
+.carousel-section{
+   display:flex;
+   flex-direction: column;
+   align-items: center; 
+   margin-top: 70px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+}
+
+.mention-section {
+    background-color: #cda5e0;
+    margin: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-mention {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+    margin: 25px;
+}
+
+.button-mention {
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 0 16px 0;
+    background-color: #ebe2e2;
+}
+.publicity-section {
+    margin: auto;
+    background-color: #ebe2e2;
+}
+.img-publicity {
+    width: 88%;
+    height: auto;
+    margin: 20px 80px;
+}
+.about-section {
+    margin: 26px;
+}
+
+.h2-about {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 43px 32px;
+}
+.p-about {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.6;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
