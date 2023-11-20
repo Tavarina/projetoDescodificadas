@@ -1,3 +1,5 @@
+/* Carousel de imagens */
+
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.querySelector('.carousel-container');
     const slides = document.querySelectorAll('.slide');
@@ -27,4 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(nextSlide, 3000); 
 
+});
+
+/* Carrinho de compras */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+
+    function addToCart() {
+        // Aqui você pode adicionar a lógica para adicionar o produto ao carrinho
+        alert('Produto adicionado ao carrinho!');
+    }
 });

@@ -127,3 +127,140 @@ font-weight: 100;
     justify-content: space-between;
     text-align: left;
 }
+.bg-section {
+    padding: 40px 0;
+    background-color: #ebe2e2;
+}
+.h2-product {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;    
+}
+.p-line {
+    text-align: center;
+    line-height: 0.1;
+    color: #918b8b;
+}
+
+
+.content-product {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 40px;
+}
+
+.product {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quantity-input {
+    width: 38px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.add-to-cart-btn {
+    background-color: #a84caf;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.video-section {
+    background-color:#ebe2e2;
+}
+.h2-video {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 43px 32px;
+    padding: 26px;
+}
+.contain-video{
+    text-align: center;
+    padding-bottom: 55px;
+}
+.h2-forms {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 16px 32px;
+    padding: 18px;
+}
+.contain-forms {
+    text-align: center;
+    padding-bottom: 55px;
+}
+.maps-section{
+    background-color:#ebe2e2;
+}
+.img-maps {
+    height: 100%;
+    width: 250px;
+    margin: 10px;
+}
+
+.contain-img {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+}
+.contain-maps {
+    display: flex;
+    padding: 55px 26vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer {
+    background-color: #ebe2e2;
+    text-align: center;
+    padding: 26px;
+    width: 100%;
+}
+.p-footer {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center; 
+}
+.title-line {
+    padding-top: 45px;
+}
+.div-time {
+    text-align: center;
+}
+.img-time {
+    height: 100%;
+    width: 250px;
+}
