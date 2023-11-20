@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function addToCart() {
-        // Aqui você pode adicionar a lógica para adicionar o produto ao carrinho
         alert('Produto adicionado ao carrinho!');
     }
 });

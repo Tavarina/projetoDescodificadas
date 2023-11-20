@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.5s ease; /* Efeito de transição na cor de fundo */
+    transition: background-color 0.5s ease;
 }
 
 .logo-container {
@@ -37,13 +37,13 @@ body{
     margin-right: 10px;
 }
 .logo-title {
-color: #fffcfc;
+color: #ffffff;
 font-weight: 100;
 }
 .nav-list a {
     font-weight: 700;
     font-size: 20px;
-    color: #fffcfc;
+    color: #ffffff;
     text-decoration: none;
     margin-right: 20px;
 }
