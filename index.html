@@ -14,22 +14,37 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">A Loja</a>
+        <a href="#time">Nosso Time</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#playlist">Playlist</a>
+        <a href="#contato">Contato</a>
+        <a href="#maps">Encontre nossa loja</a>
+    </div> 
+    <main>
+        <header class="navbar">   
+            <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
         <div class="logo-container">
-            <img src="./assets/img/logo.png" alt="Seu Logo">
-            <h1 class="logo-title">Archive Purple</h1>
-        </div>
-        <nav class="nav-list">
+                <img class="logo-navbar" src="./assets/img/logo-navbar.png" alt="Seu Logo">
+            </div>
+         </header>
+    <!-- <header class="navbar">
+        <div class="logo-container">
+            <img src="./assets/img/logo-navbar.png" alt="Seu Logo">
+             <h1 class="logo-title">Archive Purple</h1>
+        </div> -->
+        <!-- <nav class="nav-list">
             <a href="#home">A Loja</a>
             <a href="#time">Nosso Time</a>
             <a href="#produtos" >Produtos</a>
             <a href="#playlist">Playlist</a>
             <a href="#contato">Contato</a>
             <a href="#maps">Encontre nossa loja</a>
-        </nav>
+        </nav> -->
     </header>
-    <main>
-        <section class="carousel-section">
+          <section class="carousel-section">
             <div class="carousel-container">
                 <div class="slide" id="slide1">
                     <img class="carousel-img" src="./assets/img/1.png" alt="Imagem 1">

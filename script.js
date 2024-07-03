@@ -44,3 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
         alert('Produto adicionado ao carrinho!');
     }
 });
+
+/* Menu*/
+
+const openButton = document.getElementById("openbtn");
+const closeButton = document.querySelector('.closebtn');
+const sidebar = document.getElementById("sidebar");
+
+function openNav() {
+    sidebar.style.width = "250px";
+    openButton.style.display = "none";
+}
+
+function closeNav() {
+    sidebar.style.width = "0";
+    openButton.style.display = "block";
+}
+
+openButton.addEventListener('click', openNav);
+closeButton.addEventListener('click', closeNav);
