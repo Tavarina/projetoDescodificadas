@@ -63,3 +63,35 @@ function closeNav() {
 
 openButton.addEventListener('click', openNav);
 closeButton.addEventListener('click', closeNav);
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modalButtons = document.querySelectorAll(".openModalBtn");
+    const closeButtons = document.querySelectorAll(".close");
+
+    // Função para abrir o modal
+    modalButtons.forEach(button => {
+        button.onclick = function() {
+            const modalId = this.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+    });
+
+    // Função para fechar o modal
+    closeButtons.forEach(button => {
+        button.onclick = function() {
+            const modalId = this.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+    });
+
+    // Fechar o modal clicando fora dele
+    window.onclick = function(event) {
+        if (event.target.classList.contains("modal")) {
+            event.target.style.display = "none";
+        }
+    }
+});
