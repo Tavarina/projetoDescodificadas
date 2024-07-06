@@ -52,19 +52,34 @@ const closeButton = document.querySelector('.closebtn');
 const sidebar = document.getElementById("sidebar");
 
 function openNav() {
-    sidebar.style.width = "250px";
-    openButton.style.display = "none";
+    
+     sidebar.style.width = "250px";
+     openButton.style.display = "none";
 }
 
 function closeNav() {
-    sidebar.style.width = "0";
-    openButton.style.display = "block";
+    
+     sidebar.style.width = "0";
+     //openButton.style.display = "block";
 }
 
-openButton.addEventListener('click', openNav);
-closeButton.addEventListener('click', closeNav);
+window.onscroll = function() {
+    const navbar = document.getElementById("navbar");
+    const openbtn = document.getElementById("openbtn");
+    if (document.documentElement.scrollTop > 50) {
+        navbar.style.top = "-60px"; // Oculta a navbar
+        openbtn.style.display = "block"; // Exibe o botão do sidebar
+    } else {
+        navbar.style.top = "0"; // Mostra a navbar
+        openbtn.style.display = "none"; // Oculta o botão do sidebar
+        closeNav(); // Fecha o sidebar ao subir a página
+    }
+};
+//   openButton.addEventListener('click', openNav);
+//   closeButton.addEventListener('click', closeNav);
 
 
+/*Modal */
 
 document.addEventListener("DOMContentLoaded", () => {
     const modalButtons = document.querySelectorAll(".openModalBtn");
@@ -94,4 +109,26 @@ document.addEventListener("DOMContentLoaded", () => {
             event.target.style.display = "none";
         }
     }
+
+    // Função para abrir imagem em modal
+    const thumbnails = document.querySelectorAll(".img-thumbnail");
+    thumbnails.forEach(thumbnail => {
+        thumbnail.onclick = function() {
+            const imgModal = document.getElementById("imgModal");
+            const modalImg = document.getElementById("imgModalContent");
+            imgModal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll(".faq-item h4");
+
+    faqItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const parent = item.parentNode;
+            parent.classList.toggle("active");
+        });
+    });
 });

@@ -14,6 +14,17 @@
 </head>
 
 <body>
+    <header class="navbar" id="navbar">   
+        <nav class="nav-list">
+            <a href="#home">A Loja</a>
+            <a href="#time">Nosso Time</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#contato">Contato</a>
+            <a href="#maps">Encontre nossa loja</a>
+        </nav>
+    </header>
+    
     <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#home">A Loja</a>
@@ -23,28 +34,13 @@
         <a href="#contato">Contato</a>
         <a href="#maps">Encontre nossa loja</a>
     </div> 
-    <main>
-        <header class="navbar">   
-            <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
-        <div class="logo-container">
-                <img class="logo-navbar" src="./assets/img/logo-navbar.png" alt="Seu Logo">
-            </div>
-         </header>
-    <!-- <header class="navbar">
-        <div class="logo-container">
-            <img src="./assets/img/logo-navbar.png" alt="Seu Logo">
-             <h1 class="logo-title">Archive Purple</h1>
-        </div> -->
-        <!-- <nav class="nav-list">
-            <a href="#home">A Loja</a>
-            <a href="#time">Nosso Time</a>
-            <a href="#produtos" >Produtos</a>
-            <a href="#playlist">Playlist</a>
-            <a href="#contato">Contato</a>
-            <a href="#maps">Encontre nossa loja</a>
-        </nav> -->
+
+    <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>       
     </header>
-          <section class="carousel-section">
+<section class="logo-container">
+    <img class="logo-navbar" src="./assets/img/logo-navbar.png" alt="Seu Logo">
+</section>
+    <section class="carousel-section">
             <div class="carousel-container">
                 <div class="slide" id="slide1">
                     <img class="carousel-img" src="./assets/img/1.png" alt="Imagem 1">
@@ -100,70 +96,146 @@
             <div class="secao-div">
                 <!-- Card 1 -->
                 <div class="divCard">
-                    <img decoding="async" src="/pagina-html-css/valor.png" alt="imagem do card 3 html e css">
-                    <h3>Notícias do mundo Kpop</h3>
-                    <p>Veja aqui as útimas notícias do kpop.</p>
-                    <button class="openModalBtn" data-modal="modal1">Veja</button>
+                <img src="./assets/img/capa-card/noticias.png" alt="">
+                <br>
+                    <button class="openModalBtn" data-modal="modal1">Saiba mais</button>
                 </div>
     
                 <!-- Modal 1 -->
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                         <span class="close" data-modal="modal1">&times;</span>
-                        <h3>aaaaa</h3>
-                        <img decoding="async" src="/pagina-html-css/valor.png" alt="imagem do card 3 html e css">
-                        <p>Descrição do card 3.</p>
+                        <h3 class="gallery-h3">Últimas Notícias do K-pop</h3>
+                        <div class="news">
+                            <div class="news-item">
+                                <h4>Nayeon do TWICE Confirmada no Waterbomb Festival 2024</h4>
+                                <p>Nayeon, integrante do TWICE, foi confirmada para participar do Waterbomb Festival Seoul 2024, que acontecerá de 5 a 7 de julho. Ela se apresentará como parte do Green Team, ao lado de artistas como Lee Youngji, Hwasa, Chung Ha, Jay Park, Simon Dominic, BIBI, Jessi e CRUSH​ (KpopLife)​.</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>Stray Kids Encontra Ryan Reynolds e Hugh Jackman</h4>
+                                <p>Durante uma recente entrevista, Ryan Reynolds mencionou tanto o BLACKPINK quanto o Stray Kids, demonstrando seu carinho pelo grupo de K-pop. Ele se encontrou com os membros Bang Chan e Felix, gerando grande entusiasmo entre os fãs​ (Koreaboo)​.</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>Comeback do TREASURE com "REBOOT"</h4>
+                                <p>O grupo TREASURE anunciou seu retorno com o segundo álbum completo "REBOOT", programado para ser lançado em 28 de julho. O álbum promete uma variedade de músicas que destacam os talentos do grupo. Concept photos e um filme visual foram lançados, aumentando a expectativa entre os fãs​ (KpopLife)​.</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>Jin do BTS será portador da tocha olímpica nos Jogos de Paris 2024</h4>
+                                <p>Jin, membro do BTS, foi anunciado como um dos portadores da tocha olímpica para os Jogos de Paris 2024. Ele participará do revezamento da tocha, simbolizando mensagens de "harmonia" e "paz"​ (ComingSoon)​​ (Ground News)​.</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>Comeback de Julho no K-pop</h4>
+                                <p>Vários artistas de K-pop estão programados para retornos em julho de 2024, incluindo (G)I-DLE com "Klaxon", TAEYEON com "Heaven", Xdinary Heroes com "LOVE and FEAR", e Weeekly com "LIGHTS ON". Esses lançamentos estão programados para os próximos dias, criando grande antecipação entre os fãs​ (KPOP OFFICIAL)​.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-    
                 <!-- Card 2 -->
                 <div class="divCard">
-                    <img decoding="async" src="/pagina-html-css/valor.png" alt="imagem do card 3 html e css">
-                    <h3>Idols & Moda</h3>
-                    <p></p>
-                    <button class="openModalBtn" data-modal="modal2">Veja</button>
+                    <img src="./assets/img/capa-card/idolsemoda.png" alt="">
+                    <br>
+                    <button class="openModalBtn" data-modal="modal2">Saiba mais</button>
                 </div>
     
                 <!-- Modal 2 -->
                 <div id="modal2" class="modal">
                     <div class="modal-content">
                         <span class="close" data-modal="modal2">&times;</span>
-                        <h3>Card 3</h3>
-                        <img decoding="async" src="/pagina-html-css/valor.png" alt="imagem do card 3 html e css">
-                        <p>Os idols de K-pop não são apenas conhecidos por suas habilidades musicais, mas também por seu impacto significativo no mundo da moda.
+                        <h3 class="gallery-h3">Idols & a Moda</h3>
+                        <div class="gallery-item">
+                        <p class="gallery-p">Os idols de K-pop não são apenas conhecidos por suas habilidades musicais, mas também por seu impacto significativo no mundo da moda.
                              Eles são verdadeiros ícones de estilo que ditam tendências globais.
 
                             Eles estão sempre à frente das tendências,<br> exibindo looks ousados e originais <br>
                             que vão do casual ao extravagante.
-                            Devido à sua enorme influência, muitos idols se tornam embaixadores de marcas de moda renomadas. 
-                            Atualmentes muitas marcas de luxo como Dior, Louis Vuitton, Gucci, Celine e Dolce&Gabbana,<br>
-                            que frequentemente escolhem idols de K-pop para representá-las,<br> 
+                            Devido à sua enorme influência, muitos idols se tornam embaixadores de marcas de moda renomadas como Dior, Louis Vuitton, Gucci, Celine e Dolce&Gabbana,<br>
+                            frequentemente escolhem idols de K-pop para representá-las,<br> 
                              aproveitando sua grande popularidade para alcançar um público mais jovem, fiel e diversificado.
     
-                            Nos videoclipes de K-pop isso não é diferente, a moda é essencial para contar histórias e criar uma imagem de visual impactante.
                             Os idols frequentemente iniciam tendências de moda que são rapidamente adotadas por fãs ao redor do mundo.
                             A influência dos idols de K-pop na moda é indiscutível. Eles moldam tendências e inspiram milhões com seu estilo, tanto nos palcos quanto no cotidiano.
                             
                             </p>
+                        </div>
+                            <div class="gallery">
+                                <img src="./assets/img/galeria-moda/1.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/2.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/3.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/4.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/5.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/6.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/7.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/8.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/9.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/10.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/11.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/12.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/13.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/14.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/15.jpg" alt="Image 1" class="img-thumbnail">
+                                <img src="./assets/img/galeria-moda/16.jpg" alt="Image 1" class="img-thumbnail">
+                               
+                            </div>
                     </div>
                 </div>
-    
+                <div id="imgModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="imgModalContent">
+                </div>
                 <!-- Card 3 -->
                 <div class="divCard">
-                    <img decoding="async" src="/pagina-html-css/valor.png" alt="imagem do card 3 html e css">
-                    <h3>Card 3</h3>
-                    <p>Descrição do card 3.</p>
-                    <button class="openModalBtn" data-modal="modal3">Abrir Modal</button>
+                    <img src="./assets/img/capa-card/faq.png" alt="imagem do card 3 html e css">
+                    <br>
+                    <button class="openModalBtn" data-modal="modal3">Saiba mais</button>
                 </div>
     
                 <!-- Modal 3 -->
                 <div id="modal3" class="modal">
                     <div class="modal-content">
                         <span class="close" data-modal="modal3">&times;</span>
-                        <h3>Card 3</h3>
-                        <img decoding="async" src="/pagina-html-css/valor.png" alt="imagem do card 3 html e css">
-                        <p>Descrição do card 3.</p>
-                    </div>
+                        <div class="faq-container">
+                            <h3>Perguntas Frequentes (FAQ)</h3>
+                            <div class="faq-item">
+                                <h4>1. Quais tipos de produtos vocês vendem?</h4>
+                                <p>Vendemos uma variedade de roupas inspiradas no amor de fãs por seus idols de K-pop, incluindo camisetas, ecobags, moletons e muito mais. Nossos produtos são fanmade.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>2. Vocês vendem produtos oficiais de K-pop?</h4>
+                                <p>Não, nossos produtos são fanmade, de fã para fã.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>3. Como posso saber se um produto está disponível no meu tamanho?</h4>
+                                <p>Fornecemos uma tabela de tamanhos detalhada. Recomendamos que você consulte essa tabela e compare com suas medidas para garantir o melhor ajuste. Se tiver dúvidas, entre em contato com nosso atendimento ao cliente.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>4. Quais são as opções de pagamento disponíveis?</h4>
+                                <p>Aceitamos várias formas de pagamento, incluindo cartões de crédito, cartões de débito, Pix, PayPal e transferência bancária. Todos os pagamentos são processados de forma segura.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>5. Quanto tempo leva para meu pedido ser entregue?</h4>
+                                <p>O tempo de entrega varia conforme a localização. Geralmente leva de 3 a 7 dias úteis. Após o envio, você receberá um código de rastreamento para acompanhar seu pedido.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>6. Posso devolver ou trocar um produto?</h4>
+                                <p>Sim, aceitamos devoluções e trocas dentro de 30 dias após o recebimento do pedido, desde que os produtos estejam em suas condições originais, não utilizados e com todas as etiquetas anexadas. Consulte nossa política de devolução para mais detalhes.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>7. Como posso entrar em contato com o atendimento ao cliente?</h4>
+                                <p>Você pode entrar em contato conosco através do nosso e-mail de suporte (suporte@archivepurple.com) ou pelo nosso telefone (11 1234-5678). Estamos disponíveis de segunda a sexta-feira, das 9h às 18h.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>8. Vocês oferecem descontos ou promoções especiais?</h4>
+                                <p>Sim, regularmente oferecemos descontos e promoções especiais. Assine nossa newsletter para ficar por dentro das últimas ofertas e novidades.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>9. Como posso acompanhar meu pedido?</h4>
+                                <p>Após o envio do seu pedido, você receberá um e-mail com o código de rastreamento. Você pode usar esse código no site da transportadora para acompanhar a entrega do seu pedido.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>10. Vocês possuem loja física?</h4>
+                                <p>Sim, logo abaixo você encontra nosso endereço e o mapa para facilitar a localização.</p>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
