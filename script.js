@@ -67,12 +67,12 @@ window.onscroll = function() {
     const navbar = document.getElementById("navbar");
     const openbtn = document.getElementById("openbtn");
     if (document.documentElement.scrollTop > 50) {
-        navbar.style.top = "-60px"; // Oculta a navbar
-        openbtn.style.display = "block"; // Exibe o botão do sidebar
+        navbar.style.top = "-60px"; 
+        openbtn.style.display = "block";
     } else {
-        navbar.style.top = "0"; // Mostra a navbar
-        openbtn.style.display = "none"; // Oculta o botão do sidebar
-        closeNav(); // Fecha o sidebar ao subir a página
+        navbar.style.top = "0";
+        openbtn.style.display = "none"; 
+        closeNav();
     }
 };
 //   openButton.addEventListener('click', openNav);
